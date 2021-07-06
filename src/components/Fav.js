@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { Card, Button } from 'react-bootstrap'
 
-
+import updateForm from './updateForm'
 export class Fav extends Component {
     state = {
         favData: [],
@@ -94,7 +94,7 @@ export class Fav extends Component {
                     </div>
                 )
                 }
-                <updateDataForm
+                <updateForm
                 show={this.state.show}
                 objModal={this.state.objModal}
                 handleClose={this.handleClose}
