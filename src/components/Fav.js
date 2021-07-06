@@ -93,7 +93,7 @@ export class Fav extends Component {
                         )}
                     </div>
                 )
-                }z
+                }
                 <updateDataForm
                 show={this.state.show}
                 objModal={this.state.objModal}

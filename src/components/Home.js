@@ -44,7 +44,7 @@ export class Home extends Component {
         return (
             <div>
                 {this.state.err ? (<P>{this.state.err}</P>) : (
-                    <div>
+                    <div className="contanier">
 
                         {this.state.allData.map((item, i) => {
 
@@ -54,7 +54,7 @@ export class Home extends Component {
                                     <Card.Body>
                                         <Card.Title>{item.strDrink}</Card.Title>
 
-                                        <Button variant="primary" onClick={() => this.addFav(i)}>Go somewhere</Button>
+                                        <Button variant="primary" onClick={() => this.addFav(i)}>ADD TO FAVORITES</Button>
                                     </Card.Body>
                                 </Card>)
                         }
